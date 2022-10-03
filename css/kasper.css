@@ -435,3 +435,160 @@ header nav form i {
 }
 
 /* End Design */
+
+/* Start portfolio */
+
+.portfolio {
+  padding-top: var(--section-padding-t);
+  padding-bottom: var(--section-padding-b);
+}
+
+.portfolio .shuffle {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio .shuffle li {
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.portfolio .shuffle li.active {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.portfolio .images-holder {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.portfolio .images-holder .box {
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .portfolio .images-holder .box {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1199px) {
+  .portfolio .images-holder .box {
+    width: 25%;
+  }
+}
+
+.portfolio .images-holder .box img {
+  max-width: 100%;
+  transition: 0.3s;
+}
+
+.portfolio .images-holder .box:hover img {
+  transform: rotate(2deg) scale(1.1);
+}
+
+.portfolio .images-holder .box .caption {
+  padding: 15px;
+  position: absolute;
+  bottom: -100%;
+  background-color: #fff;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.portfolio .images-holder .box:hover .caption {
+  bottom: 0;
+}
+
+.portfolio .images-holder .box .caption h4 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.portfolio .images-holder .box .caption p {
+  color: var(--main-color);
+}
+
+.portfolio .more {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  border-radius: 4px;
+  background: var(--main-color);
+  color: #fff;
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+/* End portfolio */
+
+/* Start Video */
+
+.video {
+  position: relative;
+}
+
+.video video {
+  width: 100%;
+}
+
+.video .text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--transparent-background);
+  color: #fff;
+  padding: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.video .text h2 {
+  font-weight: normal;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.video .text p {
+  margin-bottom: 30px;
+}
+
+.video .text button {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* End Video */
+
+/* Start About */
+
+.about {
+  padding-top: var(--section-padding-t);
+  text-align: center;
+  overflow: hidden;
+}
+
+.about img {
+  position: relative;
+  bottom: -70px;
+  margin-top: -70px;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .about img {
+    bottom: -10px;
+    margin-top: -10px;
+  }
+}
+
+/* End About */
