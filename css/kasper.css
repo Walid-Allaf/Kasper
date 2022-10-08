@@ -1032,7 +1032,7 @@ header nav form i {
   width: 130px;
   color: #fff;
   background: var(--main-color);
-  padding: 20px;
+  padding: 20px 0;
   border: 1px solid #fff;
   border-left: none;
   text-transform: uppercase;
@@ -1050,3 +1050,99 @@ header nav form i {
 }
 
 /* End Subscribe */
+
+/* Start Conatct */
+
+.contact {
+  padding-top: var(--section-padding-t);
+  padding-bottom: var(--section-padding-b);
+}
+
+.contact .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .contact .content {
+    flex-direction: column-reverse;
+  }
+}
+
+.contact .container form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  .contact .container form {
+    width: 100%;
+  }
+}
+
+.contact .content form input[type="text"],
+.contact .content form input[type="email"],
+.contact .content form textarea {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  caret-color: var(--main-color);
+}
+
+.contact .content form input[type="text"]:focus,
+.contact .content form input[type="email"]:focus,
+.contact .content form textarea:focus {
+  outline: none;
+}
+
+.contact .content form textarea {
+  height: 130px;
+}
+
+.contact .content form input[type="submit"] {
+  width: fit-content;
+  padding: 10px 20px;
+  align-self: flex-end;
+  background: var(--main-color);
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+}
+
+.contact .content .text {
+  width: 25%;
+}
+
+@media (max-width: 768px) {
+  .contact .content .text {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+}
+
+.contact .content .text h4 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.contact .content .text p,
+.contact .content .text address {
+  line-height: 1.6;
+  color: #777;
+}
+
+.contact .content .text2 {
+  margin-top: 36px;
+}
+
+@media (max-width: 768px) {
+  .contact .content .text2 {
+    margin-top: 0;
+  }
+}
+
+/* End Conatct */
